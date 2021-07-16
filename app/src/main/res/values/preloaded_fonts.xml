@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/days_one</item>
+        <item>@font/krona_one</item>
+        <item>@font/roboto_medium</item>
+        <item>@font/rubik</item>
+        <item>@font/rubik_bold</item>
+        <item>@font/rubik_italic</item>
+        <item>@font/rubik_light</item>
+    </array>
+</resources>

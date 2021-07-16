@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Panier"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ScrollView
+
+            android:id="@+id/scrollCommercant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context=".Activity_Commercant">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:elevation="5dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageDuPanier"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/viennoiseries"
+                        />
+
+
+                    <View android:id="@+id/view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/image_shadow2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:elevation="10dp"
+                        android:id="@+id/imageCommercant"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/boulangerie"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="onClickImageCommercant"
+
+                        >
+
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+                </FrameLayout>
+                <View
+
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/primaryTextColor"
+
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/nomDuPanier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_bold"
+                    android:text="Panier de pain et de viénoiseries"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="2"
+                    />
+
+                <TextView
+                    android:id="@+id/typeDuPanier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viénoiseries"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF828591"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik"
+                    />
+
+
+                <TextView
+                    android:id="@+id/nomreDePanier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 Paniers disponibles"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF828591"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    />
+
+                <TextView
+                    android:id="@+id/prixDuPanier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="à 15€"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    />
+
+
+                <TextView
+                    android:id="@+id/dateDuPanier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aujoutdhui à 12h40"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF828591"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Par :"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF828591"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <TextView
+                    android:id="@+id/nomDuCommercant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="La boulangerie Abdelouhab"
+                    android:maxLines="2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF828591"
+                    android:textSize="15dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_italic"
+                    />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/adresseDuCommercant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Rue Gaspard Coriolis, 37200 Tours • à 2.3km"
+                    android:maxLines="2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF828591"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/rubik"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A propos du panier:"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center_horizontal"
+
+                    />
+
+                <TextView
+                    android:id="@+id/descriptionDuPanier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/rubik_italic"
+                    android:gravity="center_horizontal"
+                    android:maxLines="5"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Panier de 5 pains au chocolat et 5 croissant, et quelques viénoiserie au chocolat."
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FF828591"
+                    android:textSize="12dp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/btnMoins"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/rubik_medium"
+                        android:onClick="onCLickMoins"
+                        />
+
+
+                        <TextView
+                            android:id="@+id/nombreDePanierAReserver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:maxLines="2"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/rubik"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            />
+
+                    <Button
+                        android:id="@+id/btnPlus"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/register_bk_color"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/rubik_medium"
+                        android:onClick="onClickPlus"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnReserverPanier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Réserver"
+            style="@style/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:onClick="onClickReserverPanier"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_panier_blanc"
+        android:background="@color/primaryTextColor"
+        android:layout_margin="20dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

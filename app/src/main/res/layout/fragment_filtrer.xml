@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_Filtrer"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="60dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginLeft="50dp"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filtrer"
+                android:textSize="30dp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_gravity="top|center"
+                />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="2dp"
+                android:background="@color/primaryTextColor"
+                android:layout_gravity="center|top"
+                ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textCategorie1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catégorie 1"
+                android:textSize="20dp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <GridView
+                android:id="@+id/simpleGridViewtype1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textCategorie2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catégorie 2"
+                android:textSize="20dp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <GridView
+                android:id="@+id/simpleGridViewtype2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textCategorie3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catégorie 3"
+                android:textSize="20dp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <GridView
+                android:id="@+id/simpleGridViewtype3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textCategorie4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catégorie 4"
+                android:textSize="20dp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <GridView
+                android:id="@+id/simpleGridViewtype4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:gravity="bottom"
+            android:text="Filtrer"
+            >
+
+        </Button>
+
+
+
+
+
+</LinearLayout>

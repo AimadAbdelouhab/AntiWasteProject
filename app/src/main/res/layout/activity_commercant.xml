@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView
+
+        android:id="@+id/scrollCommercant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".Activity_Commercant">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:elevation="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageCommercant"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/boulangerie"
+            />
+
+
+        <View android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/image_shadow2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/nombrePanierCommercant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="5 restants"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:elevation="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                >
+
+            <View android:id="@+id/viewcircle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_circle"
+
+                ></View>
+
+                <ImageView
+                    android:id="@+id/idFavoris"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_empy_heart"
+                    android:onClick="onClickFavoris"
+                    />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+    <View
+
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/primaryTextColor"
+
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/nomDuCommercant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Boulangerie Abdelouhab"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="10dp"
+        android:maxLines="2"
+
+        />
+    <TextView
+        android:id="@+id/categorieCommercant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boulangerie"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FF828591"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik"
+
+        />
+
+
+    <TextView
+        android:id="@+id/adresseDuCommercant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 Rue Gaspard Coriolis, 37200 Tours • à 2.3km"
+        android:maxLines="2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FF828591"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/rubik"
+
+        />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A propos du commercant:"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15dp"
+
+        android:paddingRight="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/rubik_medium"
+        android:gravity="center_horizontal"
+
+        />
+
+        <TextView
+            android:id="@+id/descriptionDuCommercant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/rubik_italic"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:maxLines="5"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FF828591"
+            android:textSize="12dp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_commercant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_panier_blanc"
+        android:background="@color/primaryTextColor"
+        android:layout_margin="16dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
